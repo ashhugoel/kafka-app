@@ -5,7 +5,7 @@ const groupId = process.argv[2]
 
 async function init(){
     const consumer = kafka.consumer({
-        groupId:groupId
+        groupId:groupId 
     })
 
     await consumer.connect();
